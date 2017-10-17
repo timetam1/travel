@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Good</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<div id = "contener">
+
+     <div id = "head">
+       <%= render "shared/header" %>
+     </div>
+
+     <div id = "content">
+       <%= yield %>
+     </div>
+
+     <div id = "sidebar">
+       <%= render "shared/sidebar" %>
+     </div>
+
+     <div id = "footer">
+       <%= render "shared/footer" %>
+     </div>
+
+    </div>
+    
+  </body>
+</html>
