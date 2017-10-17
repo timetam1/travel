@@ -1,0 +1,4 @@
+<%= form_for @member, url: members_path(@member) do |form| %>
+<%= render "form", form: form %>
+<%= form.submit %>
+	<% end %>
